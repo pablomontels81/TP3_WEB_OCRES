@@ -25,6 +25,14 @@ class API_WEATHER{
       crossdomain: true
     })
   }
+
+  fetchThreeDayForcast(){
+    return axios
+    .get(`${API_URL}?q=${this.city}&units=metric&appid=${API_KEY}`, {
+      crossdomain: true
+    })
+  }
+  
   // Retourne l'element HTML de l'icon symbolisant la méteo.
   getHTMLElementFromIcon(icon){
     return `<img src=${API_URL_ICON}${icon}@2x.png class="weather-icon"/>`
