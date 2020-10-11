@@ -40,7 +40,7 @@ function start() {
       // On récupère l'information principal
       const mainJ1 = dataJ1.weather[0].main;
       const descriptionJ1 = dataJ1.weather[0].description;
-      const tempJ1 = dataJ1.main.temp[0];
+      const tempJ1 = dataJ1.temp.day;
       const iconJ1 = apiWeather.getHTMLElementFromIcon(dataJ1.weather[0].icon);
 
       // Modifier le DOM
@@ -55,7 +55,7 @@ function start() {
       // On récupère l'information principal
       const mainJ2 = dataJ2.weather[1].main;
       const descriptionJ2 = dataJ2.weather[1].description;
-      const tempJ2 = dataJ2.main.temp[2];
+      const tempJ2 = dataJ2.temp.day;
       const iconJ2 = apiWeather.getHTMLElementFromIcon(dataJ2.weather[1].icon);
 
       // Modifier le DOM
@@ -70,7 +70,7 @@ function start() {
       // On récupère l'information principal
       const mainJ3 = dataJ3.weather[2].main;
       const descriptionJ3 = dataJ3.weather[2].description;
-      const tempJ3 = dataJ3.main.temp[2];
+      const tempJ3 = dataJ3.temp.day;
       const iconJ3 = apiWeather.getHTMLElementFromIcon(dataJ3.weather[2].icon);
 
       // Modifier le DOM
@@ -143,7 +143,7 @@ function actualisation() {
       // On récupère l'information principal
       const mainJ2 = dataJ2.weather[1].main;
       const descriptionJ2 = dataJ2.weather[1].description;
-      const tempJ2 = dataJ2.main.temp[1];
+      const tempJ2 = dataJ2.temp.day;
       const iconJ2 = apiWeather.getHTMLElementFromIcon(dataJ2.weather[1].icon);
 
       // Modifier le DOM
@@ -158,7 +158,7 @@ function actualisation() {
       // On récupère l'information principal
       const mainJ3 = dataJ3.weather[2].main;
       const descriptionJ3 = dataJ3.weather[2].description;
-      const tempJ3 = dataJ3.main.temp[2];
+      const tempJ3 = dataJ3.temp.day;
       const iconJ3 = apiWeather.getHTMLElementFromIcon(dataJ3.weather[2].icon);
 
       // Modifier le DOM
