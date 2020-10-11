@@ -35,13 +35,13 @@ function start() {
       //Récupère les données de l'API pour J+1, J+2, J+3
       
       //Jour 1
-      const dataJ1 = response.data.list[0];
-
+      const dataJ1 = response.data.list[1];
+      
       // On récupère l'information principal
-      const mainJ1 = dataJ1.weather[0].main;
-      const descriptionJ1 = dataJ1.weather[0].description;
+      const mainJ1 = dataJ1.weather[1].main;
+      const descriptionJ1 = dataJ1.weather[1].description;
       const tempJ1 = dataJ1.main.temp;
-      const iconJ1 = apiWeather.getHTMLElementFromIcon(dataJ1.weather[0].icon);
+      const iconJ1 = apiWeather.getHTMLElementFromIcon(dataJ1.weather[1].icon);
 
       // Modifier le DOM
       document.getElementById('today-forecast-main-1').innerHTML = mainJ1;
@@ -50,13 +50,13 @@ function start() {
       document.getElementById('today-forecast-temp-1').innerHTML = `${tempJ1}°C`;
 
       //Jour 2
-      const dataJ2 = response.data.list[1];
+      const dataJ2 = response.data.list[2];
 
       // On récupère l'information principal
-      const mainJ2 = dataJ2.weather[1].main;
-      const descriptionJ2 = dataJ2.weather[1].description;
+      const mainJ2 = dataJ2.weather[2].main;
+      const descriptionJ2 = dataJ2.weather[2].description;
       const tempJ2 = dataJ2.main.temp;
-      const iconJ2 = apiWeather.getHTMLElementFromIcon(dataJ2.weather[1].icon);
+      const iconJ2 = apiWeather.getHTMLElementFromIcon(dataJ2.weather[2].icon);
 
       // Modifier le DOM
       document.getElementById('today-forecast-main-2').innerHTML = mainJ2;
@@ -65,13 +65,13 @@ function start() {
       document.getElementById('today-forecast-temp-2').innerHTML = `${tempJ2}°C`;
 
       //Jour 3
-      const dataJ3 = response.data.list[2];
+      const dataJ3 = response.data.list[3];
 
       // On récupère l'information principal
-      const mainJ3 = dataJ3.weather[2].main;
-      const descriptionJ3 = dataJ3.weather[2].description;
+      const mainJ3 = dataJ3.weather[3].main;
+      const descriptionJ3 = dataJ3.weather[3].description;
       const tempJ3 = dataJ3.main.temp;
-      const iconJ3 = apiWeather.getHTMLElementFromIcon(dataJ3.weather[2].icon);
+      const iconJ3 = apiWeather.getHTMLElementFromIcon(dataJ3.weather[3].icon);
 
       // Modifier le DOM
       document.getElementById('today-forecast-main-3').innerHTML = mainJ3;
